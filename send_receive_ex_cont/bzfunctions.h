@@ -1,0 +1,30 @@
+/******************************************************************/
+/* bzfunctions.h    BzMinds_ Automation    November, 2012         */
+/*----------------------------------------------------------------*/
+/* BzMinds especific functions in Linux                           */
+/*----------------------------------------------------------------*/
+/*                                                                */
+/******************************************************************/
+
+#ifndef BZFUNCTIONS_H
+#define BZFUNCTIONS_H
+
+#define MAX_DEVICE_NAME 20 /* maximum length of the name of the /dev comm port driver */
+#define MAX_MESSAGE_LENGTH 64 /* maximum length of the router/GW message (including headers and CRCs) */
+#define MessageFirstByte 'S'
+#define MessageLastByte 'T'
+
+#include <termios.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+/*--------------------------*/
+/* FUNCTION PROTOTYPES      */
+/*--------------------------*/
+
+int  check_message(char message[MAX_MESSAGE_LENGTH]);
+
+
+#endif  

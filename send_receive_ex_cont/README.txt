@@ -1,0 +1,1 @@
+Lee caracter a caracter hasta que encuentra el fin de transmisión '@'
